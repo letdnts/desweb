@@ -1,0 +1,60 @@
+/* Fonte e estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 32px;
+    text-align: center;
+    color: #d00000;
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: #900000;
+    margin-top: 40px;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 10px;
+  }
+  
+  /* Estilo para imagens centralizadas */
+  img {
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  /* Estilo para tabela */
+  table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+  }
+  
+  th, td {
+    border: 1px solid #999;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  /* Cor e espaçamento das seções */
+  section, h2, table {
+    background-color: #fff8f0;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
