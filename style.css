@@ -1,4 +1,3 @@
-/* Fonte e estilos gerais */
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f8f8;
@@ -23,7 +22,6 @@ body {
     padding: 10px;
   }
   
-  /* Estilo para imagens centralizadas */
   img {
     display: block;
     margin: 10px auto;
@@ -31,7 +29,6 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
   }
   
-  /* Estilo para tabela */
   table {
     width: 80%;
     margin: 20px auto;
@@ -50,7 +47,6 @@ body {
     color: white;
   }
   
-  /* Cor e espaçamento das seções */
   section, h2, table {
     background-color: #fff8f0;
     padding: 15px;
