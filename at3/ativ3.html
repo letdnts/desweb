@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Sistema solar</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+
+    <body>
+        <header class="navbar">
+            <h1>Sistema Solar</h1>
+            <nav>
+              <ul class="nav-links">
+                <li><a href="#sol">Sol</a></li>
+                <li><a href="#planetas">Planetas</a></li>
+                <li><a href="#curiosidades">Curiosidades</a></li>
+                <li>
+                  <button id="toggle-theme">🌙</button>
+                </li>
+              </ul>
+            </nav>
+            <!-- Menu sanduíche -->
+            <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+          </header>
+
+          <main id="main">
+            <section id="sol" class="flex-container">
+              <article class="flex-item">
+                <h2>O Sol</h2>
+                <p>O Sol é a estrela no centro do nosso sistema solar. Ele é responsável por fornecer luz e calor para todos os planetas. Composto principalmente de hidrogênio e hélio, o Sol é essencial para a vida na Terra.</p>
+              </article>
+              <article class="flex-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Solar_sys8.jpg" alt="Sol e planetas" />
+              </article>
+            </section>
+        
+            <section id="planetas" class="flex-container">
+              <article class="flex-item">
+                <h2>Planetas</h2>
+                <p>Os oito planetas do Sistema Solar são: Mercúrio, Vênus, Terra, Marte, Júpiter, Saturno, Urano e Netuno. 
+                    Eles orbitam o Sol e possuem características físicas e atmosferas muito distintas.</p>
+              </article>
+              <article class="flex-item">
+                <table>
+                    <caption>Distância dos Planetas em relação ao Sol</caption>
+                    <thead>
+                      <tr>
+                        <th>Planeta</th>
+                        <th>Distância Média do Sol</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Mercúrio</td>
+                        <td>57,9 milhões de km</td>
+                      </tr>
+                      <tr>
+                        <td>Vênus</td>
+                        <td>108,2 milhões de km</td>
+                      </tr>
+                      <tr>
+                        <td>Terra</td>
+                        <td>149,6 milhões de km</td>
+                      </tr>
+                      <tr>
+                        <td>Marte</td>
+                        <td>227,9 milhões de km</td>
+                      </tr>
+                      <tr>
+                        <td>Júpiter</td>
+                        <td>778,3 milhões de km</td>
+                      </tr>
+                      <tr>
+                        <td>Saturno</td>
+                        <td>1,4 bilhões de km</td>
+                      </tr>
+                      <tr>
+                        <td>Urano</td>
+                        <td>2,9 bilhões de km</td>
+                      </tr>
+                      <tr>
+                        <td>Netuno</td>
+                        <td>4,5 bilhões de km</td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </article>
+            </section>
+        
+            <section id="curiosidades" class="flex-container">
+              <article class="flex-item">
+                <h2>Curiosidades</h2>
+                <p>Você sabia que Júpiter é tão grande que caberiam 1.300 Terras dentro dele? Ou que Saturno poderia flutuar na água devido à sua baixa densidade?</p>
+              </article>
+            </section>
+          </main>
+        
+          <footer>
+            <p>&copy; Desenvolvimento Web - 2025.1 </p>
+          </footer>
+        
+          <script src="script.js"></script>
+    </body>
+</html>

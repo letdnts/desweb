@@ -1,0 +1,137 @@
+/* Estilos globais */
+:root {
+    --bg: #ffffff;
+    --text: #000000;
+    --navbar-bg: #f0f0f0;
+    --bg-secondary: #f9f9f9;
+    --text-color: #000000;
+    --accent-color: #3f51b5; /* azul escuro bonito */
+  }
+  [data-theme="dark"] {
+    --bg: #121212;
+    --text: #ffffff;
+    --navbar-bg: #1e1e1e;
+    --bg-secondary: #1a1a1a;
+    --text-color: #ffffff;
+    --accent-color: #90caf9; /* azul claro */
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+  }
+  
+  header.navbar {
+    position: sticky;
+    top: 0;
+    background-color: var(--navbar-bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+  }
+
+  table {
+    max-width: 600px;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: var(--bg-secondary); /* usa variável de cor clara ou escura */
+    color: var(--text-color);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  caption {
+    caption-side: top;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  thead {
+    background-color: var(--accent-color); 
+    color: white;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: var(--text);
+  }
+  
+  .menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: var(--text);
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .flex-item {
+    flex: 50%;
+  }
+  
+  .flex-item img {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--navbar-bg);
+  }
+  
+  /* Responsividade para telas menores */
+  @media (max-width: 800px) {
+    .flex-item img {
+        max-width: 400px;     /* limita a largura máxima */
+        width: 100%;          /* continua responsiva */
+        height: auto;         /* mantém proporção */
+        border-radius: 10px;
+        display: block;
+        margin: 0 auto;       /* centraliza a imagem */
+      }
+  
+    .nav-links {
+      flex-direction: column;
+      display: none;
+      background-color: var(--navbar-bg);
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      width: 200px;
+      padding: 10px;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  }
+  
