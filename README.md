@@ -1,4 +1,3 @@
-# desweb
 # 🌐 Desenvolvimento Web — Atividades
 
 Repositório com as atividades da disciplina de **Desenvolvimento de Software para Web** — Sistemas de Informação (UFC), 2025.1.

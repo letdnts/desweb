@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q04, Q05</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 1em;
+        }
+
+        .notification-card {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 250px;
+            background-color: #FDE2ED;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+            z-index: 1000;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+
+        .card-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .card-content h3 {
+            margin: 0 0 0.5em 0;
+        }
+
+        .conteudo {
+            height: 2000px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conteudo">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    </div>
+
+    <div class="notification-card" id="card">
+        <div class="card-header">
+            <button class="close-btn" onclick="fecharCard()">X</button>
+        </div>
+        <div class="card-content">
+            <h3>Novidade!</h3>
+            <p>Confira nossos novos produtos.</p>
+        </div>
+    </div>
+
+    <script>
+        function fecharCard() {
+            document.getElementById("card").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

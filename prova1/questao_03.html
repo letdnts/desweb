@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q03</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: sans-serif;
+            margin-top: 2em;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
+
+        button {
+            margin: 0.5em;
+            padding: 0.5em 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <img id="pokemon"
+        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg">
+    <div>
+        <button onclick="alterarImagem(-1)">Voltar -1</button>
+        <button onclick="alterarImagem(1)">Adiantar +1</button>
+    </div>
+
+    <script>
+        let currentId = 1;
+
+        function alterarImagem(direcao) {
+            currentId += direcao;
+            if (currentId < 1) currentId = 1;
+            if (currentId > 100) currentId = 100;
+
+            const img = document.getElementById("pokemon");
+            img.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${currentId}.svg`;
+        }
+    </script>
+</body>
+
+</html>
