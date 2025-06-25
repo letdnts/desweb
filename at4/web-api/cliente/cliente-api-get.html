@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Listar Alunos</title>
+</head>
+<body>
+    <h1>Alunos</h1>
+    <div id="alunos"></div>
+
+    <script>
+        async function carregarAlunos() {
+            const response = await fetch("http://localhost:3000/aluno/listar");
+            const json = await response.json();
+            const alunosDiv = document.getElementById("alunos");
+
+            for (const aluno of json) {
+                const novaDiv = document.createElement("div");
+                novaDiv.innerHTML = `
+                    <h2>${aluno.nome}</h2>
+                    <h4>${aluno.curso}</h4>
+                    <p>IRA: ${aluno.ira}</p>
+                    <a href="./cliente-api-put.html?id=${aluno.id}">EDITAR</a>
+                    <button onclick="apagarAluno(${aluno.id})">APAGAR</button>
+                    <hr>
+                `;
+                alunosDiv.appendChild(novaDiv);
+            }
+        }
+
+        async function apagarAluno(id) {
+            await fetch(`http://localhost:3000/aluno/deletar/${id}`, {
+                method: "DELETE"
+            });
+            location.reload();
+        }
+
+        carregarAlunos();
+    </script>
+</body>
+</html>
